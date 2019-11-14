@@ -1862,6 +1862,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1897,6 +1904,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -38089,6 +38097,14 @@ var render = function() {
         _vm._l(_vm.noticias, function(noticia) {
           return _c("div", { staticClass: "card mb-2" }, [
             _c("div", { staticClass: "card-header" }, [
+              _c("div", { staticClass: "text-right" }, [
+                _c(
+                  "span",
+                  { staticClass: "badge badge-pill badge-secondary" },
+                  [_vm._v(_vm._s(noticia.created_at))]
+                )
+              ]),
+              _vm._v(" "),
               _c("h3", { staticClass: "card-title" }, [
                 _vm._v(_vm._s(noticia.titulo))
               ])
@@ -38157,6 +38173,10 @@ var render = function() {
         }),
         _vm._v(" "),
         _c("h1", [_vm._v(_vm._s(_vm.noticia.titulo))]),
+        _vm._v(" "),
+        _c("span", { staticClass: "badge badge-pill badge-secondary" }, [
+          _vm._v(_vm._s(_vm.noticia.created_at))
+        ]),
         _vm._v(" "),
         _c("h3", [_vm._v(_vm._s(_vm.noticia.subtitulo))]),
         _vm._v(" "),

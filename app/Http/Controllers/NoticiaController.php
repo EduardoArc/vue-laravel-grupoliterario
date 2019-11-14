@@ -17,7 +17,7 @@ class NoticiaController extends Controller
     public function index(Request $request)
     {
         if($request->ajax()){
-            return Noticia::all();
+            return Noticia::orderBy('created_at', 'DESC')->get();
         }else{
             return view('home');
         }

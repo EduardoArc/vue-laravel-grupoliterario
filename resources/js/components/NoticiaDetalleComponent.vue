@@ -2,6 +2,7 @@
     <div v-if="noticia">
         <img  :src="'imagen/' + noticia.imagen" class="img-fluid" alt="Responsive image">
         <h1>{{ noticia.titulo }}</h1>
+        <span class="badge badge-pill badge-secondary">{{noticia.created_at}}</span>
         <h3>{{ noticia.subtitulo }}</h3>
         <p>{{ noticia.cuerpo }}</p>
     </div>

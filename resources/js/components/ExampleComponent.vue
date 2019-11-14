@@ -4,10 +4,17 @@
       <div class="col-md-8">
         <div class="card mb-2" v-for=" noticia in noticias">
           <div class="card-header">
+            <div class="text-right">
+              <span class="badge badge-pill badge-secondary">{{noticia.created_at}}</span>
+            </div>
             <h3 class="card-title">{{ noticia.titulo }}</h3>
           </div>
           <div class="card-body">
-            <img  :src="'noticias/imagen/' + noticia.imagen" class="img-fluid mb-3" alt="Responsive image">
+            <img
+              :src="'noticias/imagen/' + noticia.imagen"
+              class="img-fluid mb-3"
+              alt="Responsive image"
+            />
             <h4 class="card-subtitle">{{ noticia.subtitulo }}</h4>
             <p>{{ noticia.cuerpo }}</p>
           </div>
