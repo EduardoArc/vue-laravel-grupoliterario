@@ -38121,9 +38121,7 @@ var render = function() {
               _vm._v(" "),
               _c("h4", { staticClass: "card-subtitle" }, [
                 _vm._v(_vm._s(noticia.subtitulo))
-              ]),
-              _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(noticia.cuerpo))])
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-footer text-muted text-center" }, [

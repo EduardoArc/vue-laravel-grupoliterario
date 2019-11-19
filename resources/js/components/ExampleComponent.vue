@@ -16,7 +16,7 @@
               alt="Responsive image"
             />
             <h4 class="card-subtitle">{{ noticia.subtitulo }}</h4>
-            <p>{{ noticia.cuerpo }}</p>
+
           </div>
           <div class="card-footer text-muted text-center">
             <a :href="'/noticias/' + noticia.id">
